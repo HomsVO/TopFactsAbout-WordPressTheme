@@ -1,0 +1,86 @@
+.main {
+  font-family: 'Merienda', cursive;
+}
+.main__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #272727;
+  box-sizing: border-box;
+}
+.main__title span {
+  color: #54A28C;
+}
+.main__description {
+  max-width: 900px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+.main__posts {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.main__post {
+  margin: 10px;
+  list-style-type: none;
+  width: 350px;
+  height: 200px;
+  position: relative;
+}
+.main__post img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+}
+.main__post-about {
+  position: absolute;
+  width: 35%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  padding: 20px;
+  bottom: -32px;
+  right: 0;
+  transition: 0.4s;
+}
+.main__post-about:hover {
+  padding: 50px;
+  font-size: 36px;
+}
+.main__post-num {
+  margin: 0;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+.main__post-num span {
+  display: inline-block;
+  background-color: #599D86;
+  border: 2px solid #fff;
+}
+.main__pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.main__pagination-item {
+  margin: 15px;
+  font-size: 22px;
+  line-height: 18px;
+  list-style-type: none;
+}
+.main__pagination-item a {
+  color: #272727;
+}
+.main__pagination-item a:hover {
+  border-bottom: 4px solid #54A28C;
+}
+.main__pagination-item a:active {
+  color: #272727;
+}

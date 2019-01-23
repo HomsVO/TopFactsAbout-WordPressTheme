@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  font-family: 'Merienda', cursive;
+  justify-content: space-between;
+  padding: 0 0 10px 0;
+}
+.footer__copy p {
+  font-size: 14px;
+  color: #727272;
+}
+.footer__links {
+  display: flex;
+  list-style-type: none;
+}
+.footer__link {
+  color: #272727;
+  margin: 0 10px;
+}
+.footer__link a {
+  color: #272727;
+}

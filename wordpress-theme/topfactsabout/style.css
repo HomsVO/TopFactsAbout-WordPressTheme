@@ -1,0 +1,337 @@
+/*!
+Theme Name: topfactsabout
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: topfactsabout
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+topfactsabout is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/* normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+/*# sourceMappingURL=normalize.min.css.map */
+@font-face {
+  font-family: 'Merienda';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merienda'), local('Merienda-Regular_0_wt'), url(https://fonts.gstatic.com/s/merienda/v6/gNMHW3x8Qoy5_mf8uWMFMI8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Merienda';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Merienda Bold'), local('Merienda-Bold'), url(https://fonts.gstatic.com/s/merienda/v6/gNMAW3x8Qoy5_mf8uWu-FZ-13MM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Quicksand Light'), local('Quicksand-Light'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pgHYYT8L6.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Quicksand Medium'), local('Quicksand-Medium'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_p2HcYT8L6.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_pkHEYT8L6.ttf) format('truetype');
+}
+a {
+  text-decoration: none;
+}
+a:active {
+  color: #272727;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.header {
+  font-family: 'Merienda', cursive;
+  height: 55px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 0;
+}
+.header__title {
+  line-height: 45px;
+  width: 290px;
+  font-size: 32px;
+  color: #272727;
+}
+.header__random-button {
+  display: block;
+  max-width: 90px;
+  height: 45px;
+  margin: 0 7% 0 0;
+  color: #272727;
+  font-size: 18px;
+  border-top: 5px solid #54A28C;
+  border-bottom: 5px solid #54A28C;
+}
+.header__socials {
+  display: flex;
+  line-height: 40px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2.5% 5px 0;
+}
+.header__social {
+  margin: 0 5px;
+  background-color: #000;
+  border-radius: 20px;
+  line-height: 30px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  font-size: 18px;
+}
+.header__social--vk {
+  background-color: #4787C7;
+}
+.header__social--fb {
+  background-color: #4D70FF;
+}
+.header__social--ig {
+  background-color: #F92B55;
+}
+.header__hr {
+  width: 65%;
+  height: 2px;
+  background-color: #54A28C;
+  border: none;
+}
+.header__categories div ul {
+  font-family: 'Merienda', cursive;
+  display: flex;
+  width: 55%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.header__categories li {
+  font-size: 18px;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.header__categories li:hover {
+  background-color: #54A28C;
+}
+.header__categories li:hover a {
+  color: #fff;
+}
+.header__categories a {
+  color: #272727;
+}
+@media (max-width: 530px) {
+  .header__title {
+    font-size: 28px;
+  }
+  .header__socials {
+    display: none;
+  }
+  .header__categories {
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  }
+}
+.main {
+  font-family: 'Merienda', cursive;
+}
+.main__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #272727;
+  box-sizing: border-box;
+}
+.main__title span {
+  color: #54A28C;
+}
+.main__description {
+  max-width: 900px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+.main__posts {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.main__post {
+  list-style-type: none;
+  width: 33.334%;
+  height: 380px;
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__post-about {
+  color: #fff;
+  font-size: 32px;
+  word-wrap: break-word;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 120px 0px;
+  transition: 0.4s;
+}
+.main__post a{
+  top: 50px;
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  width: 100%;
+  height: 290px;
+}
+.main__post-about:hover {
+  letter-spacing: 5px;
+}
+.wp-pagenavi {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.wp-pagenavi a,.wp-pagenavi span {
+  margin: 15px;
+  font-size: 22px;
+  line-height: 18px;
+  list-style-type: none;
+}
+.wp-pagenavi a ,.wp-pagenavi span {
+  color: #272727;
+}
+.wp-pagenavi a:hover,.wp-pagenavi span {
+  border-bottom: 4px solid #54A28C;
+}
+.wp-pagenavi a:active,.wp-pagenavi span {
+  color: #272727;
+}
+.footer {
+  display: flex;
+  font-family: 'Merienda', cursive;
+  justify-content: space-between;
+  padding: 0 0 10px 0;
+}
+.footer div ul{
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+.footer div ul li{
+  color: #272727;
+  margin: 0 15px 0 0;
+}
+.footer div ul li a {
+  color: #272727;
+}
+.footer__copy p {
+  font-size: 14px;
+  color: #727272;
+}
+
+.single-page__title{
+  font-size: 48px;
+  color: #5E9880;
+  text-align: center;
+}
+.single-page__content>p{
+  font-size: 18px;
+  font-family:"Quicksand",serif;
+}
+.single-page__categories{
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  flex-wrap: wrap;
+}
+.single-page__category{
+  list-style-type: none;
+  width: 33.334%;
+  height: 380px;
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.single-page__category-about {
+  color: #fff;
+  font-size: 32px;
+  word-wrap: break-word;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 120px 0px;
+  transition: 0.4s;
+}
+.single-page__category a{
+  top: 50px;
+  background: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  width: 100%;
+  height: 290px;
+}
+.single-page__category-about:hover {
+  letter-spacing: 5px;
+}

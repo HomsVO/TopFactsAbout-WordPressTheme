@@ -1,0 +1,39 @@
+/* Стили поста */
+
+.single-post__header{
+    height: 250px;
+    position: relative;
+  }
+  .single-post__title{
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.4);
+    line-height: 200px;
+    text-align: center;
+    width: 100%;
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .single-post__content h1{
+    font-size: 32px;
+  }
+  .single-post__content p{
+    font-size: 18px;
+    font-family: 'Quicksand',serif;
+  }
+  .crp_related{
+    margin: 30px 0 0 0;
+  }
+  .single-post__realated-list{
+    padding: 0;
+    display: flex;
+    flex: 4;
+  }
+  .single-post__realated-list li{
+    list-style-type: none;
+    flex: 1;
+  }
+  .single-post__realated-list a{
+    color: #272727;
+  }
